@@ -10,7 +10,7 @@ let fournisseurActif = null;
 let statutFournisseurs =
 JSON.parse(
 localStorage.getItem(
-"statutFournisseurs"
+"statutFournisseursRCLP"
 )
 ) || {};
 
@@ -779,7 +779,7 @@ function toggleCommande(){
 
     localStorage.setItem(
 
-        "statutFournisseurs",
+        "statutFournisseursRCLP",
 
         JSON.stringify(
             statutFournisseurs
@@ -815,7 +815,7 @@ function toggleLivree(){
 
     localStorage.setItem(
 
-        "statutFournisseurs",
+        "statutFournisseursRCLP",
 
         JSON.stringify(
             statutFournisseurs
@@ -854,7 +854,7 @@ sauvegarderLocal();
 ];
 
 localStorage.setItem(
-    "statutFournisseurs",
+    "statutFournisseursRCLP",
     JSON.stringify(
         statutFournisseurs
     )
@@ -1035,7 +1035,7 @@ function enregistrerArticle(){
 function sauvegarderLocal(){
 
     localStorage.setItem(
-        "CommandeHDLP",
+        "CommandeRCLP",
         JSON.stringify(Commande)
     );
 
@@ -1044,7 +1044,7 @@ async function charger(){
 
     const sauvegarde =
     localStorage.getItem(
-        "CommandeHDLP"
+        "CommandeRCLP"
     );
 
     if(sauvegarde){
