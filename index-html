@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<html lang="fr"><head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -100,7 +99,11 @@ input{
 
 <div style="display:flex;gap:5px;align-items:center;">
 
-    <input id="search" placeholder="Recherche" oninput="rechercher()" style="flex:1;">
+    <input
+        id="search"
+        placeholder="Recherche"
+        oninput="rechercher()"
+        style="flex:1;">
 
     <button onclick="ouvrirAjoutArticle()">
         ➕
@@ -110,11 +113,17 @@ input{
 
 <br>
 
-<div id="resultatsRecherche" &gt;&lt;="" div="">
+<div id="resultatsRecherche"&gt;&lt;/div>
 
-<input type="file" id="importExcel" style="display:none" accept=".xlsx" onchange="importerExcel(event)">
+<input
+type="file"
+id="importExcel"
+style="display:none"
+accept=".xlsx"
+onchange="importerExcel(event)">
 
-<button onclick="document.getElementById('importExcel').click()">
+<button
+onclick="document.getElementById('importExcel').click()">
 📥 Import Excel
 </button>
 
@@ -122,9 +131,15 @@ input{
 💾 Sauvegarder
 </button>
 
-<input type="file" id="restoreJSON" style="display:none" accept=".json" onchange="restaurerJSON(event)">
+<input
+type="file"
+id="restoreJSON"
+style="display:none"
+accept=".json"
+onchange="restaurerJSON(event)">
 
-<button onclick="document.getElementById('restoreJSON').click()">
+<button
+onclick="document.getElementById('restoreJSON').click()">
 📂 Reprendre
 </button>
 
@@ -152,9 +167,9 @@ input{
     </div>
 </div>
 
-
-    <button id="btnAccueil" onclick="location.href='https://johanschrub-prog.github.io/hotel-paix-hub/'">
+</body>
+    <button id="btnAccueil"
+        onclick="location.href='https://johanschrub-prog.github.io/hotel-paix-hub/'">
 🏠
 </button>
-
-</div></body></html>
+</html>
