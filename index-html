@@ -93,7 +93,7 @@ input{
 
 <body>
 
-<div id="resultatsRecherche"></div>
+<div id="tabs" class="tabs"></div>
 
 <div class="toolbar">
 
